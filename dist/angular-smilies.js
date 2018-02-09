@@ -12,7 +12,7 @@
     shorts = {":D":"biggrin",":-D":"biggrin",":S":"confused",":-S":"confused",";(":"cry",";-(":"cry","OO":"eek","<3":"like","&lt;3":"like","^^":"lol",":|":"neutral",":-|":"neutral",":P":"razz",":-P":"razz",":(":"sad",":-(":"sad",":)":"smile",":-)":"smile",":O":"surprised",":-O":"surprised",";)":"wink",";-)":"wink"},
 
     regex = new RegExp(':(' + smilies.join('|') + '):', 'g'),
-    template = '<i class="smiley-$1" title="$1"></i>',
+    template = '<i class="smiley-$1"></i>',
 
     escapeRegExp = function(str) {
         return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
